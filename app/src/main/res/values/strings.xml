@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">home_work_33</string>
+    <string name="enter_subject">Enter subject</string>
+    <string name="enter_content">Enter content</string>
+    <string name="enter_to_email_address">Enter to email address</string>
+    <string name="send_email">Send email</string>
 </resources>

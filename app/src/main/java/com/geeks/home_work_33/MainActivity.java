@@ -11,23 +11,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editTextSubject, editTextContent, editTextToEmail;
+    EditText etSubject, etContent, etToEmail;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.btnSend);
-        editTextSubject = findViewById(R.id.subject);
-        editTextContent = findViewById(R.id.content);
-        editTextToEmail = findViewById(R.id.to_email);
+        etSubject = findViewById(R.id.subject);
+        etContent = findViewById(R.id.content);
+        etToEmail = findViewById(R.id.to_email);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String subject, content, to_email;
-                subject = editTextSubject.getText().toString();
-                content = editTextContent.getText().toString();
-                to_email = editTextToEmail.getText().toString();
+                subject = etSubject.getText().toString();
+                content = etContent.getText().toString();
+                to_email = etToEmail.getText().toString();
                 if (subject.equals("") && content.equals("") && to_email.equals("")){
                     Toast.makeText(MainActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();
                 }
